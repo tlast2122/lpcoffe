@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senja Coffee | Tempat Ngopi, Kerja, dan Cerita</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-earthy { background-color: #FDFBF7; }
+        .text-coffee { color: #3E2723; }
+        .bg-coffee { background-color: #3E2723; }
+        .accent-cream { background-color: #D7CCC8; }
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-earthy text-coffee overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tighter uppercase">Senja Coffee</h1>
+            <div class="hidden md:flex space-x-10 text-xs font-bold uppercase tracking-[0.2em]">
+            </div>
+            <a href="https://wa.me/628123456789" class="bg-coffee text-white px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-widest hover:opacity-90 transition">
+                Reservasi Meja
+            </a>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-gradient h-[90vh] flex items-center justify-center text-center text-white px-6 pt-16">
+        <div class="max-w-3xl">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Tempat Ngopi, Kerja, dan Cerita Tanpa Buru-Buru.</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90 font-light">Suasana tenang yang dirancang khusus untuk produktivitas mahasiswa dan kreativitas pekerja muda.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
+                <a href="https://wa.me/628123456789" class="w-full sm:w-auto bg-white text-coffee px-8 py-4 rounded-full font-bold shadow-xl hover:bg-stone-100 transition">Reservasi Sekarang</a>
+                <a href="#menu" class="w-full sm:w-auto border border-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">Lihat Menu</a>
+            </div>
+
+            <!-- Badges -->
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-xs md:text-sm font-medium uppercase tracking-widest">
+                <span class="flex items-center">● Free High-Speed WiFi</span>
+                <span class="flex items-center">● Full AC</span>
+                <span class="flex items-center">● Stop Kontak di Setiap Meja</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Problem Section -->
+    <section class="py-20 px-6 max-w-7xl mx-auto text-center">
+        <h3 class="text-2xl md:text-3xl font-bold mb-12">Capek Cari Tempat Nongkrong yang Nyaman <br class="hidden md:block">Tapi Selalu Penuh atau Berisik?</h3>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="p-6 bg-stone-100 rounded-2xl">
+                <div class="text-3xl mb-4">🔇</div>
+                <h4 class="font-bold mb-2">Terlalu Berisik</h4>
+                <p class="text-sm opacity-70">Sulit fokus kerja karena suara musik atau pengunjung yang terlalu kencang.</p>
+            </div>
+            <div class="p-6 bg-stone-100 rounded-2xl">
+                <div class="text-3xl mb-4">🐌</div>
+                <h4 class="font-bold mb-2">WiFi Lambat</h4>
+                <p class="text-sm opacity-70">Mau meeting atau kirim tugas malah terhambat koneksi internet lemot.</p>
+            </div>
+            <div class="p-6 bg-stone-100 rounded-2xl">
+                <div class="text-3xl mb-4">🔋</div>
+                <h4 class="font-bold mb-2">Rebutan Colokan</h4>
+                <p class="text-sm opacity-70">Laptop mati tapi tidak ada stop kontak yang tersedia di meja Anda.</p>
+            </div>
+            <div class="p-6 bg-stone-100 rounded-2xl">
+                <div class="text-3xl mb-4">☕</div>
+                <h4 class="font-bold mb-2">Kopi Biasa Saja</h4>
+                <p class="text-sm opacity-70">Membayar mahal untuk rasa kopi yang tidak sebanding dengan harganya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Solution Section (Experience) -->
+    <section class="py-20 bg-coffee text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="uppercase tracking-widest text-sm opacity-60">The Experience</span>
+                <h3 class="text-3xl md:text-4xl font-bold mt-2 mb-6 leading-tight">Lebih dari Sekadar Kopi, <br>Kami Menyediakan Inspirasi.</h3>
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs mt-1">✓</div>
+                        <div>
+                            <p class="font-bold">Ruangan Nyaman & Tenang</p>
+                            <p class="text-sm opacity-70">Zonasi area untuk yang ingin kerja fokus atau sekadar hangout santai.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs mt-1">✓</div>
+                        <div>
+                            <p class="font-bold">Koneksi Fiber Optic</p>
+                            <p class="text-sm opacity-70">WiFi stabil 100Mbps untuk kelancaran tugas dan meeting online Anda.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs mt-1">✓</div>
+                        <div>
+                            <p class="font-bold">Biji Kopi Pilihan & Barista Expert</p>
+                            <p class="text-sm opacity-70">Hanya menggunakan biji kopi grade tertinggi yang diproses oleh ahlinya.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800" alt="Barista serving coffee" class="rounded-3xl shadow-2xl">
+                <div class="absolute -bottom-6 -left-6 bg-stone-200 text-coffee p-6 rounded-2xl shadow-xl hidden lg:block">
+                    <p class="text-2xl font-bold">100%</p>
+                    <p class="text-xs uppercase tracking-widest">Arabica Beans</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Menu Highlight Section -->
+    <section id="menu" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-bold mb-2">Menu Favorit Senja</h3>
+            <p class="opacity-70">Paling banyak dipesan dan paling sering masuk story Instagram.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Item 1 -->
+            <div class="group cursor-pointer">
+                <div class="aspect-square overflow-hidden rounded-2xl mb-4 bg-stone-200">
+                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&q=80&w=600" alt="Senja Signature Latte" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <h4 class="font-bold text-sm md:text-base">Senja Signature Latte</h4>
+                <p class="text-xs md:text-sm opacity-60 mb-2 italic">Creamy blend with brown sugar</p>
+                <p class="font-bold">Rp 28.000</p>
+            </div>
+            <!-- Item 2 -->
+            <div class="group cursor-pointer">
+                <div class="aspect-square overflow-hidden rounded-2xl mb-4 bg-stone-200">
+                    <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?auto=format&fit=crop&q=80&w=600" alt="Caramel Macchiato" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <h4 class="font-bold text-sm md:text-base">Caramel Macchiato</h4>
+                <p class="text-xs md:text-sm opacity-60 mb-2 italic">Rich espresso & buttery caramel</p>
+                <p class="font-bold">Rp 32.000</p>
+            </div>
+            <!-- Item 3 -->
+            <div class="group cursor-pointer">
+                <div class="aspect-square overflow-hidden rounded-2xl mb-4 bg-stone-200">
+                    <img src="https://images.unsplash.com/photo-1536819114556-1e10f967fb61?auto=format&fit=crop&q=80&w=600" alt="Matcha Cream" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <h4 class="font-bold text-sm md:text-base">Matcha Creamy Latte</h4>
+                <p class="text-xs md:text-sm opacity-60 mb-2 italic">Premium Uji matcha & foam</p>
+                <p class="font-bold">Rp 30.000</p>
+            </div>
+            <!-- Item 4 -->
+            <div class="group cursor-pointer">
+                <div class="aspect-square overflow-hidden rounded-2xl mb-4 bg-stone-200">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=600" alt="Butter Croissant" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <h4 class="font-bold text-sm md:text-base">Butter Croissant</h4>
+                <p class="text-xs md:text-sm opacity-60 mb-2 italic">Flaky, buttery, and fresh baked</p>
+                <p class="font-bold">Rp 22.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Social Proof Section -->
+    <section class="py-20 bg-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl font-bold mb-2">Kenapa Mereka Memilih Senja?</h3>
+                    <p class="opacity-70 text-lg">Sudah dikunjungi 5.000+ pelanggan setiap bulannya.</p>
+                </div>
+                <div class="flex flex-col items-center p-6 bg-white rounded-2xl shadow-sm">
+                    <span class="text-5xl font-bold mb-2">4.7⭐</span>
+                    <p class="text-sm font-semibold opacity-60">Google Maps Rating</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm italic">
+                    <p class="mb-6">"Tempatnya cozy banget buat ngerjain tugas. Playlist musiknya pas, nggak kegedean. WiFi kenceng stabil!"</p>
+                    <p class="font-bold not-italic">— Andra, Mahasiswa UI</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm italic">
+                    <p class="mb-6">"Kopinya balance, nggak terlalu pahit. Paling suka Signature Latte-nya, wajib coba!"</p>
+                    <p class="font-bold not-italic">— Sinta, Content Creator</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm italic">
+                    <p class="mb-6">"Stop kontak di mana-mana, jadi nggak khawatir baterai habis. Kerja dari sini produktif banget."</p>
+                    <p class="font-bold not-italic">— Dimas, Freelance Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Offer Section -->
+    <section id="promo" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <div class="bg-coffee text-white p-12 rounded-[2rem] relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+            <h3 class="text-3xl font-bold mb-4">Penawaran Spesial</h3>
+            <div class="space-y-4 mb-8">
+                <div class="border-b border-white/20 pb-4">
+                    <p class="text-xl font-semibold">Diskon 20% Untuk Mahasiswa</p>
+                    <p class="text-sm opacity-70">Cukup tunjukkan kartu pelajar aktif Anda.</p>
+                </div>
+                <div class="border-b border-white/20 pb-4">
+                    <p class="text-xl font-semibold">Buy 1 Get 1 Every Monday</p>
+                    <p class="text-sm opacity-70">Semua varian Milk-based drinks.</p>
+                </div>
+                <div>
+                    <p class="text-xl font-semibold">Free Refill Air Mineral</p>
+                    <p class="text-sm opacity-70">Stay hydrated selama kamu fokus bekerja.</p>
+                </div>
+            </div>
+            <p class="text-sm font-bold bg-white text-coffee inline-block px-4 py-2 rounded-lg mb-6 uppercase tracking-wider">
+                Promo berlaku sampai akhir bulan ini!
+            </p>
+            <br>
+            <a href="https://wa.me/628123456789" class="inline-block bg-white text-coffee px-8 py-4 rounded-full font-bold hover:scale-105 transition">Klaim Promo via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- 7. FAQ Section -->
+    <section id="faq" class="py-20 px-6 max-w-3xl mx-auto">
+        <h3 class="text-2xl font-bold mb-8 text-center">Pertanyaan Umum</h3>
+        <div class="space-y-4">
+            <details class="group bg-stone-100 rounded-xl p-6 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center list-none">
+                    Apakah bisa reservasi meja?
+                    <span class="group-open:rotate-180 transition">↓</span>
+                </summary>
+                <p class="mt-4 text-sm opacity-70">Tentu! Kamu bisa reservasi meja untuk kerja kelompok atau meeting kecil melalui WhatsApp kami minimal 1 jam sebelumnya.</p>
+            </details>
+            <details class="group bg-stone-100 rounded-xl p-6 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center list-none">
+                    Apakah tersedia ruangan meeting?
+                    <span class="group-open:rotate-180 transition">↓</span>
+                </summary>
+                <p class="mt-4 text-sm opacity-70">Kami memiliki 1 VIP Room dengan kapasitas hingga 8 orang lengkap dengan monitor TV dan AC privat.</p>
+            </details>
+            <details class="group bg-stone-100 rounded-xl p-6 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center list-none">
+                    Jam operasionalnya kapan?
+                    <span class="group-open:rotate-180 transition">↓</span>
+                </summary>
+                <p class="mt-4 text-sm opacity-70">Kami buka setiap hari. Senin-Jumat: 08:00 - 22:00, Sabtu-Minggu: 09:00 - 23:00.</p>
+            </details>
+            <details class="group bg-stone-100 rounded-xl p-6 cursor-pointer">
+                <summary class="font-bold flex justify-between items-center list-none">
+                    Apakah tersedia parkir yang luas?
+                    <span class="group-open:rotate-180 transition">↓</span>
+                </summary>
+                <p class="mt-4 text-sm opacity-70">Tersedia area parkir yang aman untuk motor dan mobil tepat di depan gedung cafe kami.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- 8. Location Section -->
+    <section class="py-20 px-6 bg-stone-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl overflow-hidden h-80 bg-stone-300 shadow-inner">
+                <!-- Placeholder for Google Maps -->
+                <div class="w-full h-full flex flex-col items-center justify-center text-stone-500">
+                    <svg class="w-12 h-12 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    <p class="font-semibold">Peta Lokasi Terpasang Di Sini</p>
+                    <p class="text-xs">Jl. Senopati No. 45, Jakarta Selatan</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-4">Kunjungi Store Kami</h3>
+                <p class="mb-6 opacity-70">Terletak strategis di pusat kota, mudah dijangkau dengan transportasi umum maupun kendaraan pribadi.</p>
+                <div class="space-y-2 text-sm">
+                    <p><strong>Alamat:</strong> Jl. Senopati No. 45, Kebayoran Baru, Jakarta Selatan.</p>
+                    <p><strong>Telepon:</strong> +62 812-3456-7890</p>
+                    <p><strong>Instagram:</strong> @senjacoffee.id</p>
+                </div>
+                <div class="mt-8">
+                    <a href="#" class="text-coffee font-bold border-b-2 border-coffee pb-1 hover:opacity-60 transition">Buka di Google Maps →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Final CTA Section -->
+    <section class="py-24 px-6 text-center">
+        <h3 class="text-4xl md:text-5xl font-bold mb-6">Datang dan Rasakan Sendiri <br>Suasana Senja.</h3>
+        <p class="text-lg opacity-70 mb-10 max-w-2xl mx-auto">Kami sudah menyiapkan meja terbaik dan kopi terhangat untuk menemani harimu.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://wa.me/628123456789" class="bg-coffee text-white px-10 py-5 rounded-full font-bold shadow-2xl hover:scale-105 transition text-lg">Reservasi via WhatsApp</a>
+            <a href="https://instagram.com" class="border border-coffee text-coffee px-10 py-5 rounded-full font-bold hover:bg-coffee/5 transition text-lg">Follow Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-stone-200 text-center text-xs opacity-50 uppercase tracking-[0.2em]">
+        <p>&copy; 2024 Senja Coffee. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

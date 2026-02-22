@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOKUSIN - Stop Procrastinating, Start Achieving</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(129, 140, 248, 0.15), transparent),
+                        radial-gradient(circle at bottom left, rgba(192, 132, 252, 0.15), transparent);
+        }
+
+        .app-mockup {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 8px solid #1f2937;
+            border-radius: 2.5rem;
+        }
+
+        .pricing-card-popular {
+            border: 2px solid #818cf8;
+            position: relative;
+        }
+
+        .pricing-card-popular::before {
+            content: 'Paling Populer';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #818cf8;
+            color: white;
+            padding: 2px 12px;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Header / Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold tracking-tight text-slate-900 uppercase">Fokusin</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#features" class="hover:text-indigo-600 transition">Fitur</a>
+                    <a href="#pricing" class="hover:text-indigo-600 transition">Harga</a>
+                    <a href="#faq" class="hover:text-indigo-600 transition">FAQ</a>
+                </div>
+                <a href="#download" class="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">
+                    Download
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section class="pt-32 pb-20 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <span class="inline-block px-4 py-1.5 mb-4 text-xs font-bold tracking-wider text-indigo-600 uppercase bg-indigo-50 rounded-full">
+                        #1 Productivity App for Gen Z
+                    </span>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        Stop Procrastinating.<br>
+                        <span class="gradient-text">Start Achieving.</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 max-w-lg mx-auto lg:mx-0">
+                        Kelola tugas, blokir distraksi, dan capai target harianmu dengan sistem yang didesain khusus untuk cara kerja otak modern.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+                        <a href="#download" class="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg hover:bg-indigo-700 transition-all transform hover:scale-105 shadow-xl shadow-indigo-200">
+                            Get Started Free
+                        </a>
+                        <div class="flex items-center gap-4 justify-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" class="h-10 cursor-pointer">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-10 cursor-pointer">
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 justify-center lg:justify-start text-sm text-slate-500">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-[10px] font-bold">R</div>
+                            <div class="w-8 h-8 rounded-full bg-slate-300 border-2 border-white flex items-center justify-center text-[10px] font-bold">D</div>
+                            <div class="w-8 h-8 rounded-full bg-slate-400 border-2 border-white flex items-center justify-center text-[10px] font-bold">A</div>
+                        </div>
+                        <span>Gabung bersama 1.500+ mahasiswa produktif lainnya</span>
+                    </div>
+                </div>
+                <div class="relative flex justify-center">
+                    <div class="absolute inset-0 bg-indigo-400/20 blur-[120px] rounded-full"></div>
+                    <!-- UI Mockup -->
+                    <div class="app-mockup w-[280px] h-[580px] bg-white overflow-hidden relative">
+                        <!-- Screen Content -->
+                        <div class="p-6 bg-slate-50 h-full">
+                            <div class="flex justify-between items-center mb-8">
+                                <div class="text-xs font-bold text-slate-400">SENIN, 22 FEB</div>
+                                <div class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center">
+                                    <i class="fas fa-user text-indigo-600 text-[10px]"></i>
+                                </div>
+                            </div>
+                            <h3 class="font-bold text-xl mb-6">Halo, Fokusin Team! 👋</h3>
+                            <div class="bg-indigo-600 rounded-2xl p-4 text-white mb-6">
+                                <p class="text-[10px] opacity-80">Sesi Fokus Sekarang</p>
+                                <p class="text-2xl font-bold mt-1">24:59</p>
+                                <div class="mt-4 bg-white/20 h-1 rounded-full overflow-hidden">
+                                    <div class="bg-white h-full w-2/3"></div>
+                                </div>
+                            </div>
+                            <p class="text-xs font-bold text-slate-500 mb-4 uppercase">To-Do List</p>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                                    <div class="w-4 h-4 border-2 border-indigo-500 rounded-full"></div>
+                                    <div class="text-[11px] font-medium">Revisi Skripsi Bab 3</div>
+                                </div>
+                                <div class="flex items-center gap-3 bg-white p-3 rounded-xl shadow-sm border border-slate-100">
+                                    <div class="w-4 h-4 border-2 border-indigo-500 rounded-full"></div>
+                                    <div class="text-[11px] font-medium">Meeting Project Freelance</div>
+                                </div>
+                                <div class="flex items-center gap-3 bg-white/50 p-3 rounded-xl border border-dashed border-slate-200">
+                                    <div class="w-4 h-4 border-2 border-slate-300 rounded-full"></div>
+                                    <div class="text-[11px] text-slate-400">Tambah tugas baru...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl mb-4">Sering Nunda Tugas Sampai Deadline?</h2>
+                <p class="text-slate-600">Kami tahu rasanya. Dunia digital penuh dengan distraksi yang bikin fokusmu berantakan.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+                    <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-list-ul"></i></div>
+                    <h4 class="font-bold mb-2">To-Do List Berantakan</h4>
+                    <p class="text-sm text-slate-500">Terlalu banyak list tapi bingung mulai dari mana? Akhirnya malah scrolling sosmed.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+                    <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-bell-slash"></i></div>
+                    <h4 class="font-bold mb-2">Notifikasi Gak Kontrol</h4>
+                    <p class="text-sm text-slate-500">Baru mau ngerjain tugas, ada notif masuk. Fokus langsung buyar seketika.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+                    <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-brain"></i></div>
+                    <h4 class="font-bold mb-2">Gampang Distraksi</h4>
+                    <p class="text-sm text-slate-500">Niatnya cari referensi di YouTube, malah berakhir nonton video kucing 2 jam.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+                    <div class="text-indigo-600 text-3xl mb-4"><i class="fas fa-calendar-times"></i></div>
+                    <h4 class="font-bold mb-2">Target Harian Gagal</h4>
+                    <p class="text-sm text-slate-500">Malam hari ngerasa bersalah karena tugas gak ada yang selesai. Ulangi terus besok.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Solution & 4. Features Section -->
+    <section id="features" class="py-20 bg-slate-900 text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:flex items-center gap-16">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h2 class="text-4xl font-extrabold mb-6">Kenalan Sama FOKUSIN.<br><span class="text-indigo-400">Asisten Produktivitasmu.</span></h2>
+                    <p class="text-slate-400 mb-10">Fokusin bukan cuma to-do list biasa. Ini adalah ekosistem yang membantu kamu membangun kebiasaan produktif tanpa merasa tertekan.</p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-8">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h4 class="font-bold text-lg text-white">Smart Daily Planner</h4>
+                            <p class="text-sm text-slate-400">AI kami bantu urutin tugasmu berdasarkan prioritas dan level energi kamu.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400">
+                                <i class="fas fa-stopwatch"></i>
+                            </div>
+                            <h4 class="font-bold text-lg text-white">Deep Focus Mode</h4>
+                            <p class="text-sm text-slate-400">Gunakan Timer Pomodoro yang terintegrasi untuk menjaga ritme kerja otak.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="font-bold text-lg text-white">Progress Tracking</h4>
+                            <p class="text-sm text-slate-400">Lihat grafik produktivitasmu tiap hari. Level up diri kamu seperti main game.</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4 class="font-bold text-lg text-white">Minimalist Interface</h4>
+                            <p class="text-sm text-slate-400">UI yang bersih, tanpa iklan, dan tanpa fitur yang gak perlu. Fokus total.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex justify-center lg:justify-end">
+                    <div class="relative">
+                         <div class="absolute inset-0 bg-indigo-600/30 blur-[100px] rounded-full"></div>
+                         <div class="bg-indigo-600/10 border border-indigo-500/30 p-4 rounded-[3rem]">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=400" alt="Mobile UI" class="rounded-[2.5rem] w-full max-w-[320px] shadow-2xl">
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Social Proof Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="flex justify-center gap-1 text-yellow-400 mb-4">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h2 class="text-3xl font-extrabold mb-2">Rating 4.8/5 dari 1.500+ Pengguna</h2>
+                <p class="text-slate-500">Dengarkan apa kata mereka yang sudah berhasil melawan rasa malas.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 italic text-slate-700 relative">
+                    <i class="fas fa-quote-left absolute top-4 left-4 text-indigo-200 text-2xl"></i>
+                    "Akhirnya bisa konsisten ngerjain tugas kuliah tanpa terdistraksi TikTok tiap 5 menit. Sumpah, kebantu banget!"
+                    <div class="mt-6 font-bold not-italic text-slate-900">— Rafi, Mahasiswa UI</div>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 italic text-slate-700 relative">
+                    <i class="fas fa-quote-left absolute top-4 left-4 text-indigo-200 text-2xl"></i>
+                    "Simple tapi powerful banget. Fitur statistik harian bikin aku jadi kompetitif sama diri sendiri buat lebih produktif."
+                    <div class="mt-6 font-bold not-italic text-slate-900">— Dinda, Surabaya</div>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 italic text-slate-700 relative">
+                    <i class="fas fa-quote-left absolute top-4 left-4 text-indigo-200 text-2xl"></i>
+                    "Desainnya clean banget, gak pusing pakenya. Cocok buat yang kerjaannya banyak deadline kayak gue."
+                    <div class="mt-6 font-bold not-italic text-slate-900">— Kevin, Digital Nomad</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Benefit Section -->
+    <section class="py-20 bg-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-12 uppercase tracking-widest">Apa Yang Kamu Dapatkan?</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-4xl font-bold mb-2">30%</div>
+                    <p class="text-indigo-100">Lebih Produktif</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">0</div>
+                    <p class="text-indigo-100">Deadline Terlewat</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">-50%</div>
+                    <p class="text-indigo-100">Tingkat Stress</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">2 Jam</div>
+                    <p class="text-indigo-100">Waktu Luang Ekstra</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Pricing Section -->
+    <section id="pricing" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4">Pilih Paket Fokusmu</h2>
+                <p class="text-slate-600 text-lg">Mulai gratis, upgrade kapan saja untuk fitur super.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Free Plan -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-200">
+                    <h3 class="text-xl font-bold mb-2">Fokusin Free</h3>
+                    <p class="text-slate-500 mb-8 text-sm">Cocok untuk yang baru mulai.</p>
+                    <div class="text-4xl font-extrabold mb-8">Rp0 <span class="text-sm font-normal text-slate-400">/selamanya</span></div>
+                    <ul class="space-y-4 mb-10 text-slate-600 text-sm">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> To-Do List Unlimited</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Focus Timer (Pomodoro)</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i> Sinkron ke 1 Device</li>
+                        <li class="opacity-50 line-through"><i class="fas fa-times mr-2"></i> Statistik Detail</li>
+                    </ul>
+                    <button class="w-full py-4 border-2 border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition">Pilih Gratis</button>
+                </div>
+                <!-- Pro Plan -->
+                <div class="bg-white p-10 rounded-[2.5rem] shadow-xl pricing-card-popular border border-indigo-100">
+                    <h3 class="text-xl font-bold mb-2">Fokusin PRO</h3>
+                    <p class="text-slate-500 mb-8 text-sm">Untuk si paling ambisius.</p>
+                    <div class="text-4xl font-extrabold mb-8">Rp49.000 <span class="text-sm font-normal text-slate-400">/bulan</span></div>
+                    <ul class="space-y-4 mb-10 text-slate-600 text-sm">
+                        <li><i class="fas fa-check text-indigo-500 mr-2"></i> Semua fitur Free</li>
+                        <li><i class="fas fa-check text-indigo-500 mr-2"></i> Multi-device Sync</li>
+                        <li><i class="fas fa-check text-indigo-500 mr-2"></i> Statistik Mendalam (AI)</li>
+                        <li><i class="fas fa-check text-indigo-500 mr-2"></i> Integrasi Kalender</li>
+                        <li><i class="fas fa-check text-indigo-500 mr-2"></i> Tanpa Batas Cloud</li>
+                    </ul>
+                    <button class="w-full py-4 bg-indigo-600 text-white rounded-2xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200">Upgrade ke Pro</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-center mb-12">Pertanyaan Umum</h2>
+            <div class="space-y-6">
+                <div class="border-b border-slate-200 pb-4">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-slate-800 focus:outline-none">
+                        <span>Apakah aplikasi ini beneran gratis?</span>
+                        <i class="fas fa-chevron-down text-indigo-500"></i>
+                    </button>
+                    <p class="mt-2 text-slate-500 text-sm">Iya! Kamu bisa pakai fitur utama seperti To-Do list dan Timer selamanya secara gratis.</p>
+                </div>
+                <div class="border-b border-slate-200 pb-4">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-slate-800 focus:outline-none">
+                        <span>Bisa sinkron antar HP dan Laptop?</span>
+                        <i class="fas fa-chevron-down text-indigo-500"></i>
+                    </button>
+                    <p class="mt-2 text-slate-500 text-sm">Tentu saja. Fitur sinkronisasi tersedia di paket PRO untuk memastikan data kamu ada di mana-mana.</p>
+                </div>
+                <div class="border-b border-slate-200 pb-4">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-slate-800 focus:outline-none">
+                        <span>Data saya aman?</span>
+                        <i class="fas fa-chevron-down text-indigo-500"></i>
+                    </button>
+                    <p class="mt-2 text-slate-500 text-sm">Keamanan privasi adalah prioritas kami. Semua data dienkripsi dan tidak akan dijual ke pihak manapun.</p>
+                </div>
+                <div class="border-b border-slate-200 pb-4">
+                    <button class="w-full text-left flex justify-between items-center font-bold text-slate-800 focus:outline-none">
+                        <span>Bisa cancel langganan kapan saja?</span>
+                        <i class="fas fa-chevron-down text-indigo-500"></i>
+                    </button>
+                    <p class="mt-2 text-slate-500 text-sm">Bisa banget. Tidak ada kontrak yang mengikat, kamu bisa balik ke paket gratis kapan pun kamu mau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Final CTA Section -->
+    <section id="download" class="py-20 bg-slate-50 overflow-hidden relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="bg-indigo-900 rounded-[3rem] p-12 lg:p-20 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500/20 blur-[100px]"></div>
+                <h2 class="text-4xl lg:text-5xl font-extrabold mb-6">Mulai Hari Ini.<br>Versi Produktif dari Dirimu Menunggu.</h2>
+                <p class="text-indigo-200 mb-10 text-lg">Jangan biarkan harimu terbuang sia-sia lagi. Download sekarang gratis.</p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <button class="px-10 py-5 bg-white text-indigo-900 rounded-2xl font-bold text-xl hover:bg-indigo-50 transition shadow-2xl">
+                        Download Sekarang
+                    </button>
+                    <div class="flex gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" class="h-12 border border-white/20 rounded-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-12 border border-white/20 rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-indigo-600 rounded flex items-center justify-center">
+                    <i class="fas fa-check text-white text-[10px]"></i>
+                </div>
+                <span class="text-lg font-bold uppercase tracking-tight">Fokusin</span>
+            </div>
+            <p class="text-slate-400 text-sm">© 2024 Fokusin App. All rights reserved.</p>
+            <div class="flex gap-6 text-slate-400 text-lg">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

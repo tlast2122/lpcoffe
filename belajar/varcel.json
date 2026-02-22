@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/coffee.html" },
+    { "source": "/app", "destination": "/app.html" },
+    { "source": "/skincare", "destination": "/skincare.html" },
+    { "source": "/fashion", "destination": "/fashion.html" }
+  ]
+}

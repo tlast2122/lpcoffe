@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMERA Brightening Serum</title>
+    
+    <!-- Google Fonts: Inter (Sans) & Playfair Display (Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans text-slate-800 bg-stone-50 min-h-screen selection:bg-rose-200">
+
+    <!-- HEADER / NAVIGATION -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-rose-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-serif font-bold text-rose-600 tracking-tight">LUMERA.</div>
+            <button onclick="scrollToOffer()" class="bg-rose-600 hover:bg-rose-700 text-white px-5 py-2 rounded-full font-medium text-sm transition-colors shadow-sm">
+                Pesan Sekarang
+            </button>
+        </div>
+    </nav>
+
+    <!-- 1. HERO SECTION -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-rose-50 to-stone-50 pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse lg:flex-row items-center gap-12">
+            
+            <!-- Hero Content -->
+            <div class="flex-1 text-center lg:text-left space-y-6">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm text-sm font-medium text-rose-600 border border-rose-100">
+                    <i data-lucide="badge-check" class="text-rose-500 w-[18px] h-[18px]"></i>
+                    Dermatologically Tested & Best Seller
+                </div>
+                
+                <h1 class="text-4xl lg:text-5xl/tight font-bold text-slate-900 font-serif">
+                    Kembalikan Cahaya Alami Kulitmu, Tampil <span class="text-rose-600">Glowing & Percaya Diri</span> Tanpa Makeup Tebal.
+                </h1>
+                
+                <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    LUMERA Brightening Serum diformulasikan khusus untuk memudarkan bekas jerawat membandel dan mencerahkan kulit kusam secara merata. Rasakan perubahannya dalam 14 hari.
+                </p>
+                
+                <div class="pt-4 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                    <button onclick="scrollToOffer()" class="w-full sm:w-auto bg-rose-600 hover:bg-rose-700 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg shadow-rose-200 transition-transform transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                        Dapatkan Promo Sekarang
+                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </button>
+                    <p class="text-sm text-slate-500 font-medium">✨ Garansi 100% Uang Kembali</p>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="flex-1 relative w-full max-w-md mx-auto lg:max-w-none">
+                <div class="absolute inset-0 bg-rose-200 rounded-full blur-3xl opacity-50 translate-x-10 translate-y-10"></div>
+                <img 
+                    src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&q=80&w=800" 
+                    alt="LUMERA Brightening Serum Botol Premium" 
+                    class="relative z-10 w-full h-[500px] object-cover rounded-3xl shadow-2xl border-4 border-white"
+                />
+                <!-- Floating Element -->
+                <div class="absolute -bottom-6 -left-6 z-20 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3 border border-stone-100">
+                    <div class="bg-amber-100 p-2 rounded-full">
+                        <i data-lucide="star" class="text-amber-500 fill-current w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-slate-800">Rating 4.9/5</p>
+                        <p class="text-xs text-slate-500">Dari 1.200+ Ulasan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. PROBLEM SECTION -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-10">
+                Masih Bermasalah dengan Kulit Kusam dan Bekas Jerawat?
+            </h2>
+            
+            <div class="grid sm:grid-cols-2 gap-4 text-left">
+                <div class="bg-stone-50 p-6 rounded-2xl flex gap-4 border border-stone-100 hover:border-rose-200 transition-colors">
+                    <i data-lucide="x-circle" class="text-rose-400 shrink-0 mt-1 w-6 h-6"></i>
+                    <p class="text-slate-700 leading-relaxed">Bekas jerawat kemerahan (PIE) atau kehitaman (PIH) yang susah hilang berbulan-bulan.</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-2xl flex gap-4 border border-stone-100 hover:border-rose-200 transition-colors">
+                    <i data-lucide="x-circle" class="text-rose-400 shrink-0 mt-1 w-6 h-6"></i>
+                    <p class="text-slate-700 leading-relaxed">Kulit wajah terlihat lelah, kusam, dan tidak bercahaya meski sudah cukup tidur.</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-2xl flex gap-4 border border-stone-100 hover:border-rose-200 transition-colors">
+                    <i data-lucide="x-circle" class="text-rose-400 shrink-0 mt-1 w-6 h-6"></i>
+                    <p class="text-slate-700 leading-relaxed">Tidak percaya diri keluar rumah tanpa lapisan foundation atau concealer tebal.</p>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-2xl flex gap-4 border border-stone-100 hover:border-rose-200 transition-colors">
+                    <i data-lucide="x-circle" class="text-rose-400 shrink-0 mt-1 w-6 h-6"></i>
+                    <p class="text-slate-700 leading-relaxed">Tekstur kulit terasa kasar dan warna kulit tidak merata di beberapa area wajah.</p>
+                </div>
+            </div>
+            <p class="mt-10 text-lg font-medium text-slate-600">
+                Jika Anda mengalami satu atau lebih masalah di atas, Anda tidak sendirian. Dan kami punya solusinya.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. SOLUTION SECTION -->
+    <section class="py-20 bg-rose-50/50">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 order-2 lg:order-1">
+                <img 
+                    src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&q=80&w=800" 
+                    alt="Tekstur Serum LUMERA" 
+                    class="w-full h-[400px] lg:h-[600px] object-cover rounded-3xl shadow-lg border-4 border-white"
+                />
+            </div>
+            
+            <div class="flex-1 order-1 lg:order-2 space-y-8">
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">
+                        Perkenalkan, Solusi Cerdas untuk Kulit Impianmu.
+                    </h2>
+                    <p class="text-lg text-slate-600">
+                        LUMERA Brightening Serum diformulasikan secara ahli dengan menggabungkan bahan aktif premium yang terbukti klinis aman dan efektif untuk kulit wanita Indonesia di iklim tropis.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex gap-4 bg-white p-5 rounded-2xl shadow-sm border border-rose-100">
+                        <div class="bg-rose-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="droplets" class="text-rose-600 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-lg">10% Premium Niacinamide</h3>
+                            <p class="text-slate-600 mt-1">Mencerahkan wajah secara merata, mengontrol minyak berlebih, dan memperkuat skin barrier.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white p-5 rounded-2xl shadow-sm border border-rose-100">
+                        <div class="bg-rose-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="droplets" class="text-rose-600 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-lg">2% Alpha Arbutin</h3>
+                            <p class="text-slate-600 mt-1">Agen pencerah paling efektif untuk memudarkan hiperpigmentasi dan noda hitam bekas jerawat tanpa memicu iritasi.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 bg-white p-5 rounded-2xl shadow-sm border border-rose-100">
+                        <div class="bg-rose-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                            <i data-lucide="droplets" class="text-rose-600 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-lg">Stabilized Vitamin C</h3>
+                            <p class="text-slate-600 mt-1">Antioksidan kuat yang menangkal radikal bebas dan memberikan efek 'glowing' natural dari dalam.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-sm font-medium text-slate-500 flex items-center gap-2">
+                    <i data-lucide="shield-check" class="text-green-500 w-[18px] h-[18px]"></i>
+                    Formula ringan, cepat meresap, tidak lengket, No Alcohol & No Fragrance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BENEFIT SECTION -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-slate-900 mb-4">
+                    Lebih dari Sekadar Mencerahkan
+                </h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                    Satu botol dengan berbagai manfaat nyata untuk mengembalikan rasa percaya diri Anda setiap bercermin.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Benefit 1 -->
+                <div class="bg-stone-50 border border-stone-100 p-8 rounded-3xl text-center hover:bg-rose-50 transition-colors duration-300">
+                    <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm border border-rose-100">
+                        <i data-lucide="sparkles" class="text-rose-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Glowing Natural</h3>
+                    <p class="text-slate-600 leading-relaxed">Wajah tampak sehat bercahaya dari dalam, siap tampil bare face tanpa dempul makeup.</p>
+                </div>
+                <!-- Benefit 2 -->
+                <div class="bg-stone-50 border border-stone-100 p-8 rounded-3xl text-center hover:bg-rose-50 transition-colors duration-300">
+                    <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm border border-rose-100">
+                        <i data-lucide="check-circle-2" class="text-rose-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Bekas Jerawat Pudar</h3>
+                    <p class="text-slate-600 leading-relaxed">Noda hitam dan kemerahan tersamarkan secara signifikan dalam pemakaian rutin 14-28 hari.</p>
+                </div>
+                <!-- Benefit 3 -->
+                <div class="bg-stone-50 border border-stone-100 p-8 rounded-3xl text-center hover:bg-rose-50 transition-colors duration-300">
+                    <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm border border-rose-100">
+                        <i data-lucide="star" class="text-rose-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Warna Kulit Merata</h3>
+                    <p class="text-slate-600 leading-relaxed">Mengatasi area wajah yang belang atau kusam akibat paparan sinar matahari.</p>
+                </div>
+                <!-- Benefit 4 -->
+                <div class="bg-stone-50 border border-stone-100 p-8 rounded-3xl text-center hover:bg-rose-50 transition-colors duration-300">
+                    <div class="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm border border-rose-100">
+                        <i data-lucide="shield-check" class="text-rose-500 w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Skin Barrier Kuat</h3>
+                    <p class="text-slate-600 leading-relaxed">Kulit menjadi lebih kenyal, terhidrasi maksimal, dan tidak mudah kemerahan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SOCIAL PROOF SECTION -->
+    <section class="py-20 bg-rose-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-4">
+                    Bukti Nyata, Bukan Sekadar Janji
+                </h2>
+                <p class="text-rose-200 text-lg max-w-2xl mx-auto">
+                    Sudah digunakan dan dicintai oleh <span class="font-bold text-white">1.200+ wanita Indonesia</span> untuk mendapatkan kulit sehat impian mereka.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white text-slate-800 p-8 rounded-3xl relative flex flex-col">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">"Bekas jerawatku yang dari zaman kuliah akhirnya benar-benar pudar setelah rutin pakai Lumera botol pertama. Teksturnya enak banget, super ringan dan cepat meresap!"</p>
+                    <div class="flex items-center gap-3 border-t border-stone-100 pt-4 mt-auto">
+                        <div class="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center font-bold text-rose-600">N</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Nadia Saraswati</h4>
+                            <p class="text-xs text-slate-500">Usia 24 tahun</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-white text-slate-800 p-8 rounded-3xl relative flex flex-col">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">"Kulitku super sensitif, gampang merah kalau salah produk. Tapi pakai Lumera ini aman banget. Sekarang jauh lebih pede kemana-mana bare face karena kulit udah nggak kusam lagi."</p>
+                    <div class="flex items-center gap-3 border-t border-stone-100 pt-4 mt-auto">
+                        <div class="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center font-bold text-rose-600">S</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Siska Prameswari</h4>
+                            <p class="text-xs text-slate-500">Usia 29 tahun</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="bg-white text-slate-800 p-8 rounded-3xl relative flex flex-col">
+                    <div class="flex gap-1 mb-4">
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                        <i data-lucide="star" class="text-amber-400 fill-current w-[18px] h-[18px]"></i>
+                    </div>
+                    <p class="text-slate-600 italic mb-6 leading-relaxed">"Investasi skincare terbaik tahun ini. Kulit jadi lebih plumpy dan cerah natural. Teman-teman kantorku sampai nanyain rahasianya apa kok bisa se-glowing itu. Suka banget!"</p>
+                    <div class="flex items-center gap-3 border-t border-stone-100 pt-4 mt-auto">
+                        <div class="w-10 h-10 bg-rose-100 rounded-full flex items-center justify-center font-bold text-rose-600">A</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Amanda Dwi</h4>
+                            <p class="text-xs text-slate-500">Usia 32 tahun</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. OFFER SECTION -->
+    <section id="offer-section" class="py-20 bg-stone-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl border border-rose-100 relative overflow-hidden">
+                <!-- Banner Urgency -->
+                <div class="absolute top-0 inset-x-0 bg-rose-600 text-white text-center py-2 text-sm font-bold flex items-center justify-center gap-2">
+                    <i data-lucide="clock" class="w-4 h-4"></i> Promo Terbatas Minggu Ini Saja!
+                </div>
+                
+                <div class="mt-8 text-center space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-serif font-bold text-slate-900">
+                        Mulai Perjalanan Kulit Glowingmu Hari Ini
+                    </h2>
+                    
+                    <div class="flex flex-col items-center justify-center gap-2 py-6">
+                        <p class="text-lg text-slate-500 line-through decoration-rose-400 decoration-2">Rp 199.000</p>
+                        <div class="flex items-start gap-1 text-rose-600">
+                            <span class="text-2xl font-bold mt-2">Rp</span>
+                            <span class="text-6xl font-bold tracking-tight">149.000</span>
+                        </div>
+                        <p class="text-sm text-slate-500 font-medium mt-2">Untuk pemakaian 1-2 bulan (20ml)</p>
+                    </div>
+
+                    <div class="bg-orange-50 border border-orange-200 p-4 rounded-xl inline-flex items-center gap-3 text-left mb-8 mx-auto">
+                        <i data-lucide="gift" class="text-orange-500 shrink-0 w-8 h-8"></i>
+                        <div>
+                            <p class="text-sm font-bold text-orange-800">BONUS SPESIAL HARI INI</p>
+                            <p class="text-sm text-orange-700">Gratis Facial Wash Travel Size (Senilai Rp 49.000)</p>
+                        </div>
+                    </div>
+
+                    <div class="max-w-md mx-auto space-y-4">
+                        <button class="w-full bg-rose-600 hover:bg-rose-700 text-white text-xl font-bold py-5 rounded-full shadow-xl shadow-rose-200/50 transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2">
+                            Pesan Sekarang - Diskon 50rb
+                            <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                        </button>
+                        <p class="text-sm text-slate-500 flex items-center justify-center gap-1">
+                            <i data-lucide="shield-alert" class="w-4 h-4"></i> Stok promo tersisa kurang dari 50 paket.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FAQ SECTION -->
+    <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl font-serif font-bold text-center text-slate-900 mb-12">
+                Pertanyaan yang Sering Diajukan
+            </h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all duration-200">
+                    <button onclick="toggleFaq(0)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-stone-50 hover:bg-rose-50 font-bold text-slate-800 focus:outline-none">
+                        Apakah LUMERA Serum aman untuk kulit sensitif?
+                        <i data-lucide="chevron-down" id="faq-down-0" class="text-slate-400 shrink-0"></i>
+                        <i data-lucide="chevron-up" id="faq-up-0" class="text-rose-500 shrink-0 hidden"></i>
+                    </button>
+                    <div id="faq-content-0" class="px-6 text-slate-600 transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+                        Sangat aman. Formula kami dibuat tanpa alkohol, tanpa pewangi buatan (fragrance-free), dan tanpa paraben. Bahan aktifnya diformulasikan dengan persentase optimal agar efektif bekerja tanpa memicu iritasi.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all duration-200">
+                    <button onclick="toggleFaq(1)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-stone-50 hover:bg-rose-50 font-bold text-slate-800 focus:outline-none">
+                        Berapa lama hasilnya akan terlihat?
+                        <i data-lucide="chevron-down" id="faq-down-1" class="text-slate-400 shrink-0"></i>
+                        <i data-lucide="chevron-up" id="faq-up-1" class="text-rose-500 shrink-0 hidden"></i>
+                    </button>
+                    <div id="faq-content-1" class="px-6 text-slate-600 transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+                        Setiap kulit unik, namun berdasarkan uji konsumen, kelembapan kulit akan terasa meningkat sejak minggu pertama. Perubahan warna kulit yang lebih merata dan pudarnya bekas jerawat umumnya terlihat dalam pemakaian rutin 14 hingga 28 hari.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all duration-200">
+                    <button onclick="toggleFaq(2)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-stone-50 hover:bg-rose-50 font-bold text-slate-800 focus:outline-none">
+                        Apakah aman digunakan oleh ibu hamil dan menyusui?
+                        <i data-lucide="chevron-down" id="faq-down-2" class="text-slate-400 shrink-0"></i>
+                        <i data-lucide="chevron-up" id="faq-up-2" class="text-rose-500 shrink-0 hidden"></i>
+                    </button>
+                    <div id="faq-content-2" class="px-6 text-slate-600 transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+                        Kandungan kami bebas dari retinol dan BHA persentase tinggi yang umumnya dihindari saat kehamilan. Namun, untuk ketenangan pikiran, kami selalu menyarankan untuk berkonsultasi dengan dokter kandungan Anda sebelum menggunakan produk skincare baru.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-stone-200 rounded-2xl overflow-hidden transition-all duration-200">
+                    <button onclick="toggleFaq(3)" class="w-full px-6 py-5 text-left flex justify-between items-center bg-stone-50 hover:bg-rose-50 font-bold text-slate-800 focus:outline-none">
+                        Bagaimana cara pemakaian yang tepat?
+                        <i data-lucide="chevron-down" id="faq-down-3" class="text-slate-400 shrink-0"></i>
+                        <i data-lucide="chevron-up" id="faq-up-3" class="text-rose-500 shrink-0 hidden"></i>
+                    </button>
+                    <div id="faq-content-3" class="px-6 text-slate-600 transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+                        Gunakan 2-3 tetes serum pada wajah yang telah dibersihkan dan setelah menggunakan toner. Tepuk perlahan hingga meresap. Gunakan pagi dan malam hari. Di pagi hari, wajib akhiri rangkaian skincare Anda dengan sunscreen.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FINAL CTA SECTION -->
+    <section class="py-24 bg-rose-600 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1615397323868-f9cb798fbd57?auto=format&fit=crop&q=80&w=1200')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <h2 class="text-4xl lg:text-5xl font-serif font-bold mb-6">
+                Siap Ucapkan Selamat Tinggal pada Kulit Kusam?
+            </h2>
+            <p class="text-xl text-rose-100 mb-10 max-w-2xl mx-auto">
+                Berikan kesempatan pada kulitmu untuk bersinar kembali. Jangan tunda untuk mendapatkan kulit sehat yang selama ini Anda idamkan.
+            </p>
+            
+            <div class="inline-block bg-white/10 backdrop-blur-sm border border-rose-400 p-4 rounded-2xl mb-10">
+                <p class="font-bold flex items-center justify-center gap-2">
+                    <i data-lucide="shield-check" class="text-rose-200 w-6 h-6"></i>
+                    Garansi 100% Uang Kembali Jika Tidak Ada Perubahan dalam 7 Hari!
+                </p>
+            </div>
+            
+            <button onclick="scrollToOffer()" class="block w-full max-w-sm mx-auto bg-white text-rose-600 text-xl font-bold py-5 rounded-full shadow-2xl transition-transform transform hover:scale-105">
+                Pesan Sekarang - Diskon 50rb
+            </button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-12 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-2xl font-serif font-bold text-white mb-6">LUMERA.</div>
+            <p class="mb-4">© <span id="current-year"></span> LUMERA Skincare. Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#" class="hover:text-white transition-colors">Syarat & Ketentuan</a>
+                <span>|</span>
+                <a href="#" class="hover:text-white transition-colors">Kebijakan Privasi</a>
+                <span>|</span>
+                <a href="#" class="hover:text-white transition-colors">Hubungi Kami</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVITY SCRIPTS -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Set Current Year in Footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth Scroll to Offer Section
+        function scrollToOffer() {
+            document.getElementById('offer-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // FAQ Toggle Logic
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const iconDown = document.getElementById(`faq-down-${index}`);
+            const iconUp = document.getElementById(`faq-up-${index}`);
+
+            // If the clicked FAQ is currently closed
+            if (content.classList.contains('max-h-0')) {
+                // Open it
+                content.classList.remove('max-h-0');
+                content.classList.add('max-h-[500px]', 'py-5', 'border-t', 'border-stone-100');
+                
+                // Toggle icons
+                iconDown.classList.add('hidden');
+                iconUp.classList.remove('hidden');
+            } else {
+                // Close it
+                content.classList.add('max-h-0');
+                content.classList.remove('max-h-[500px]', 'py-5', 'border-t', 'border-stone-100');
+                
+                // Toggle icons
+                iconDown.classList.remove('hidden');
+                iconUp.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
